@@ -10,6 +10,7 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
+  -webkit-tap-highlight-color: transparent;
 }
 
 :root {
@@ -115,15 +116,15 @@ i.fi {
 }
 
 .tabs {
-  max-width: 250px;
+  max-width: 100%;
   width: 100%;
   display: flex;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .item {
   width: fit-content;
-  /* min-width: 30%; */
   padding: 15px;
   cursor: pointer;
   text-align: center;
@@ -153,7 +154,7 @@ i.fi {
 
 .current {
   max-width: 98%;
-  min-width: 30%;
+  /* min-width: 8%; */
   padding: 15px;
   display: flex;
   align-items: center;

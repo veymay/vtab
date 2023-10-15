@@ -22,8 +22,8 @@ function switchTab() {
       tabItem[i].classList.add('active')
       itemContent[i].style.display = 'block'
 
-      currrentItem.style.left = 'auto';
-      currrentItem.style.top = 'auto';
+      currrentItem.style.left = '0';
+      currrentItem.style.top = '0';
 
       if (moduls.classList.contains('vertical')) {
         currrentItem.style.width = '98%'

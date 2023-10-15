@@ -12,6 +12,7 @@ itemContent[0].style.display = 'block'
 
 function switchTab() {
   tabItem.forEach((item, i) => {
+    currrentItem.style.height = item.offsetHeight + 'px'
     item.addEventListener('click', () => {
       tabItem.forEach(item2 => {
         if (item != item2) {
